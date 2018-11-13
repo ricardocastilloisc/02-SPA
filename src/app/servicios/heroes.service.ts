@@ -87,7 +87,6 @@ export class HeroesService {
       }
 
     }
-    console.log(heroesArr);
     return heroesArr;
   }
 }
