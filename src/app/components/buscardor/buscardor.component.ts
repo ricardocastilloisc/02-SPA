@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { close } from 'inspector';
 import { HeroesService, Heroe } from '../../servicios/heroes.service';
 
 @Component({
