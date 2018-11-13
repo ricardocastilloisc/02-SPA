@@ -23,7 +23,6 @@ export class BuscardorComponent implements OnInit {
         this.heroes = this._heroesService.buscarHeroes(params['termino']);
       });
 
-    console.log(this.heroe);
 
   }
 }
