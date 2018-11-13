@@ -11,26 +11,8 @@
   </div>
 </div>
 
-<div *ngFor="let heroe of heroes; let i = index" >
 
-    <h1 class="animated fadeIn">{{ heroe.nombre | uppercase}} <small>({{ heroe.aparicion | date:'y' }})</small></h1>
-
-    <div class="row animated fadeIn fast">
-      <div class="col-md-4">
-        <img [src]="heroe.img" [alt]="heroe.nombre" class="img-fluid">
-        <br><br>
-
-      </div>
-      <div class="col-md-8">
-        <h3>{{ heroe.nombre }}</h3>
-        <hr>
-        <p>{{ heroe.bio }}</p>
-        <div>
-          <img class="img-logo" *ngIf="heroe.casa == 'Marvel'"  src="assets/img/marvel-logo.png" alt="MARVEL">
-          <img class="img-logo" *ngIf="heroe.casa == 'DC'"  src="assets/img/dc-logo.jpg" alt="DC">
-        </div>
-      </div>
-    </div>
+<div class="card-columns">
+<app-heroe-tarjeta [heroe]="foo" [index]="i" *ngFor="let foo of heroes; let i = index"></app-heroe-tarjeta>
 </div>
-
 <hr/><hr/>
